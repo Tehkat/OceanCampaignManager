@@ -20,3 +20,9 @@ C:\Users\Terry\OceanCampaignManager\MapManager.App\obj\Debug\net10.0-windows\Map
 C:\Users\Terry\OceanCampaignManager\MapManager.App\obj\Debug\net10.0-windows\ref\MapManager.App.dll
 C:\Users\Terry\OceanCampaignManager\MapManager.App\obj\Debug\net10.0-windows\Views\MapPreviewWindow.baml
 C:\Users\Terry\OceanCampaignManager\MapManager.App\obj\Debug\net10.0-windows\Views\MapPreviewWindow.g.cs
+C:\Users\Terry\OceanCampaignManager\MapManager.App\obj\Debug\net10.0-windows\Views\CampaignWindow.baml
+C:\Users\Terry\OceanCampaignManager\MapManager.App\obj\Debug\net10.0-windows\Views\IslandWindow.baml
+C:\Users\Terry\OceanCampaignManager\MapManager.App\obj\Debug\net10.0-windows\Views\StartWindow.baml
+C:\Users\Terry\OceanCampaignManager\MapManager.App\obj\Debug\net10.0-windows\Views\CampaignWindow.g.cs
+C:\Users\Terry\OceanCampaignManager\MapManager.App\obj\Debug\net10.0-windows\Views\IslandWindow.g.cs
+C:\Users\Terry\OceanCampaignManager\MapManager.App\obj\Debug\net10.0-windows\Views\StartWindow.g.cs

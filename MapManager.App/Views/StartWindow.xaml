@@ -1,0 +1,18 @@
+<Window x:Class="MapManager.App.Views.StartWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Ocean Campaign Manager" Height="400" Width="600"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <!-- Background -->
+        <Image Source="../Assets/background_start.jpg" Stretch="Fill" />
+
+        <!-- Overlay -->
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBlock Text="Ocean Campaign Manager"
+                       FontSize="28" FontWeight="Bold" Foreground="White"
+                       HorizontalAlignment="Center" Margin="0,0,0,20"/>
+            <Button Content="Start" Width="120" Height="40" Click="Start_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
