@@ -59,7 +59,7 @@ namespace MapManager.App.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/MapManager.App;component/views/campaignwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/MapManager.App;V1.0.0.0;component/views/campaignwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\CampaignWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

@@ -67,7 +67,7 @@ namespace MapManager.App.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/MapManager.App;component/views/islandwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/MapManager.App;V1.0.0.0;component/views/islandwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\IslandWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

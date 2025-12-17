@@ -1,0 +1,10 @@
+C:\Users\Terry\OceanCampaignManager\MapManager.App\bin\Release\net8.0-windows\win-x64\publish\MapManager.App.pdb
+C:\Users\Terry\OceanCampaignManager\MapManager.App\bin\Release\net8.0-windows\win-x64\publish\Assets\background_campaign.jpg
+C:\Users\Terry\OceanCampaignManager\MapManager.App\bin\Release\net8.0-windows\win-x64\publish\Assets\background_island.jpg
+C:\Users\Terry\OceanCampaignManager\MapManager.App\bin\Release\net8.0-windows\win-x64\publish\Assets\background_start.jpg
+C:\Users\Terry\OceanCampaignManager\MapManager.App\bin\Release\net8.0-windows\win-x64\publish\D3DCompiler_47_cor3.dll
+C:\Users\Terry\OceanCampaignManager\MapManager.App\bin\Release\net8.0-windows\win-x64\publish\PenImc_cor3.dll
+C:\Users\Terry\OceanCampaignManager\MapManager.App\bin\Release\net8.0-windows\win-x64\publish\PresentationNative_cor3.dll
+C:\Users\Terry\OceanCampaignManager\MapManager.App\bin\Release\net8.0-windows\win-x64\publish\vcruntime140_cor3.dll
+C:\Users\Terry\OceanCampaignManager\MapManager.App\bin\Release\net8.0-windows\win-x64\publish\wpfgfx_cor3.dll
+C:\Users\Terry\OceanCampaignManager\MapManager.App\bin\Release\net8.0-windows\win-x64\publish\MapManager.App.exe
