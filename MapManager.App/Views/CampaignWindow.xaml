@@ -1,20 +1,33 @@
 <Window x:Class="MapManager.App.Views.CampaignWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Select Campaign" Height="500" Width="800">
+        Title="Select Campaign"
+        WindowStartupLocation="CenterScreen"
+        WindowState="Maximized">
     <Grid>
-        <!-- Background -->
-        <Image Source="../Assets/background_campaign.jpg" Stretch="Fill" Opacity="0.3"/>
+        <!-- Background fills entire window -->
+        <Image Source="pack://application:,,,/Assets/background_campaign.jpg"
+               Stretch="Fill"/>
 
-        <!-- Overlay -->
-        <StackPanel Margin="20">
-            <TextBlock Text="Campaigns" FontSize="20" FontWeight="Bold" Margin="0,0,0,10"/>
-            <ListBox x:Name="CampaignList" DisplayMemberPath="Name" Height="350"/>
-            <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
-                <Button Content="New Campaign" Width="120" Click="NewCampaign_Click"/>
-                <Button Content="Delete" Width="80" Margin="10,0,0,0" Click="DeleteCampaign_Click"/>
-                <Button Content="Open Campaign" Width="120" Margin="10,0,0,0" Click="OpenCampaign_Click"/>
+        <!-- Foreground content scales -->
+        <Viewbox Stretch="Uniform">
+            <StackPanel Margin="20">
+                <TextBlock Text="Campaigns"
+                           FontSize="28" FontWeight="Bold" Foreground="White" FontFamily="Segoe UI" Margin="0,0,0,10">
+                    <TextBlock.Effect>
+                        <DropShadowEffect Color="Black" BlurRadius="0" ShadowDepth="0" Opacity="1"/>
+                    </TextBlock.Effect>
+                </TextBlock>
+
+                <ListBox x:Name="CampaignList" DisplayMemberPath="Name" Height="350"/>
+
+                <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                    <Button Content="New Campaign" Width="150" Height="50" Click="NewCampaign_Click"/>
+                    <Button Content="Delete" Width="100" Height="50" Margin="10,0,0,0" Click="DeleteCampaign_Click"/>
+                    <Button Content="Open Campaign" Width="150" Height="50" Margin="10,0,0,0" Click="OpenCampaign_Click"/>
+                    <Button Content="Log Out" Width="120" Height="50" Margin="10,0,0,0" Click="LogOut_Click"/>
+                </StackPanel>
             </StackPanel>
-        </StackPanel>
+        </Viewbox>
     </Grid>
 </Window>

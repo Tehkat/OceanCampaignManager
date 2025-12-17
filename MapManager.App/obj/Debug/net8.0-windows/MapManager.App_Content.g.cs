@@ -7,7 +7,8 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/maps/maza-auroraglaceon-maza2.jpg")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/maps/tumblr_858b2be3a58b529cfb86dcacf405ad4f_65d0df3a_250.jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/background_campaign.jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/background_island.jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/background_start.jpg")]
 
 

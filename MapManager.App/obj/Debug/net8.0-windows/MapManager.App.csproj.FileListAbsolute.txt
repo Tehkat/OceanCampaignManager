@@ -1,4 +1,3 @@
-C:\Users\Terry\OceanCampaignManager\MapManager.App\bin\Debug\net8.0-windows\Assets\Maps\tumblr_858b2be3a58b529cfb86dcacf405ad4f_65d0df3a_250.jpg
 C:\Users\Terry\OceanCampaignManager\MapManager.App\bin\Debug\net8.0-windows\MapManager.App.exe
 C:\Users\Terry\OceanCampaignManager\MapManager.App\bin\Debug\net8.0-windows\MapManager.App.deps.json
 C:\Users\Terry\OceanCampaignManager\MapManager.App\bin\Debug\net8.0-windows\MapManager.App.runtimeconfig.json
@@ -15,7 +14,6 @@ C:\Users\Terry\OceanCampaignManager\MapManager.App\obj\Debug\net8.0-windows\View
 C:\Users\Terry\OceanCampaignManager\MapManager.App\obj\Debug\net8.0-windows\Views\MapPreviewWindow.g.cs
 C:\Users\Terry\OceanCampaignManager\MapManager.App\obj\Debug\net8.0-windows\Views\StartWindow.g.cs
 C:\Users\Terry\OceanCampaignManager\MapManager.App\obj\Debug\net8.0-windows\App.g.cs
-C:\Users\Terry\OceanCampaignManager\MapManager.App\obj\Debug\net8.0-windows\MapManager.App_Content.g.cs
 C:\Users\Terry\OceanCampaignManager\MapManager.App\obj\Debug\net8.0-windows\MapManager.App_MarkupCompile.cache
 C:\Users\Terry\OceanCampaignManager\MapManager.App\obj\Debug\net8.0-windows\MapManager.App.g.resources
 C:\Users\Terry\OceanCampaignManager\MapManager.App\obj\Debug\net8.0-windows\MapManager.App.GeneratedMSBuildEditorConfig.editorconfig
@@ -28,4 +26,7 @@ C:\Users\Terry\OceanCampaignManager\MapManager.App\obj\Debug\net8.0-windows\refi
 C:\Users\Terry\OceanCampaignManager\MapManager.App\obj\Debug\net8.0-windows\MapManager.App.pdb
 C:\Users\Terry\OceanCampaignManager\MapManager.App\obj\Debug\net8.0-windows\MapManager.App.genruntimeconfig.cache
 C:\Users\Terry\OceanCampaignManager\MapManager.App\obj\Debug\net8.0-windows\ref\MapManager.App.dll
-C:\Users\Terry\OceanCampaignManager\MapManager.App\bin\Debug\net8.0-windows\Assets\Maps\maza-auroraglaceon-maza2.jpg
+C:\Users\Terry\OceanCampaignManager\MapManager.App\bin\Debug\net8.0-windows\Assets\background_campaign.jpg
+C:\Users\Terry\OceanCampaignManager\MapManager.App\bin\Debug\net8.0-windows\Assets\background_island.jpg
+C:\Users\Terry\OceanCampaignManager\MapManager.App\bin\Debug\net8.0-windows\Assets\background_start.jpg
+C:\Users\Terry\OceanCampaignManager\MapManager.App\obj\Debug\net8.0-windows\MapManager.App_Content.g.cs

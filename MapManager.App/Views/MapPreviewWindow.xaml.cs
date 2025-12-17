@@ -10,5 +10,10 @@ namespace MapManager.App.Views
             InitializeComponent();
             MapImage.Source = new BitmapImage(new System.Uri(mapPath));
         }
+
+        private void Close_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }

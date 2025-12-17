@@ -15,5 +15,10 @@ namespace MapManager.App.Views
             campaignWindow.Show();
             this.Close();
         }
+
+        private void Close_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
     }
 }

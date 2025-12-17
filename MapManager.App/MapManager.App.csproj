@@ -1,29 +1,31 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net8.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
+    <Nullable>enable</Nullable>
+    <ApplicationIcon>AppIcon.ico</ApplicationIcon>
+    <RootNamespace>MapManager.App</RootNamespace>
+    <AssemblyName>MapManager.App</AssemblyName>
   </PropertyGroup>
 
-  <!-- Background images -->
   <ItemGroup>
-    <Resource Include="Assets\background_start.jpg" />
-    <Resource Include="Assets\background_campaign.jpg" />
-    <Resource Include="Assets\background_island.jpg" />
-  </ItemGroup>
-
-  <!-- Maps folder -->
-  <ItemGroup>
-    <Content Include="Assets\Maps\**\*">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
-
-  <!-- NuGet packages -->
-  <ItemGroup>
-    <PackageReference Include="System.Text.Json" Version="8.0.0" />
+    <PackageReference Include="System.Text.Json" Version="8.0.5" />
     <PackageReference Include="Microsoft.VisualBasic" Version="10.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Copy all images in Assets folder to output -->
+    <Content Include="Assets\*.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\*.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\*.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>

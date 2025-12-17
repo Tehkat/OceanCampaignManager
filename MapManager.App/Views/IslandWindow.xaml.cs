@@ -1,4 +1,7 @@
+using System;
+using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Windows;
 using Microsoft.Win32;
 using MapManager.App.Models;
@@ -23,34 +26,20 @@ namespace MapManager.App.Views
         {
             var name = Microsoft.VisualBasic.Interaction.InputBox("Enter island name:", "New Island");
             if (string.IsNullOrWhiteSpace(name)) return;
+
+            // Prevent duplicate island names (case-insensitive)
+            if (_campaign.Islands.Any(i => i.Name.Equals(name, StringComparison.OrdinalIgnoreCase)))
+            {
+                MessageBox.Show($"An island named '{name}' already exists in this campaign.");
+                return;
+            }
+
             _campaign.Islands.Add(new Island { Name = name });
-            _dataService.Save(new System.Collections.Generic.List<Campaign> { _campaign });
+            _dataService.Save(new List<Campaign> { _campaign });
             IslandList.Items.Refresh();
         }
 
-        private void UploadMap_Click(object sender, RoutedEventArgs e)
-        {
-            var island = IslandList.SelectedItem as Island;
-            if (island == null)
-            {
-                MessageBox.Show("Please select an island first.");
-                return;
-            }
-
-            var dlg = new OpenFileDialog { Filter = "Image Files|*.png;*.jpg;*.jpeg;*.bmp" };
-            if (dlg.ShowDialog() == true)
-            {
-                var mapsDir = Path.Combine(Directory.GetCurrentDirectory(), "Assets", "Maps");
-                Directory.CreateDirectory(mapsDir);
-                var dest = Path.Combine(mapsDir, Path.GetFileName(dlg.FileName));
-                File.Copy(dlg.FileName, dest, true);
-                island.MapPath = dest;
-                _dataService.Save(new System.Collections.Generic.List<Campaign> { _campaign });
-                IslandList.Items.Refresh();
-            }
-        }
-
-        private void UpdateMap_Click(object sender, RoutedEventArgs e)
+        private void UploadOrUpdateMap_Click(object sender, RoutedEventArgs e)
         {
             var island = IslandList.SelectedItem as Island;
             if (island == null)
@@ -66,12 +55,12 @@ namespace MapManager.App.Views
                 Directory.CreateDirectory(mapsDir);
                 var dest = Path.Combine(mapsDir, Path.GetFileName(dlg.FileName));
 
-                File.Copy(dlg.FileName, dest, true); // overwrite
+                File.Copy(dlg.FileName, dest, true); // overwrite if exists
                 island.MapPath = dest;
-                _dataService.Save(new System.Collections.Generic.List<Campaign> { _campaign });
+                _dataService.Save(new List<Campaign> { _campaign });
                 IslandList.Items.Refresh();
 
-                MessageBox.Show($"Map for island '{island.Name}' updated successfully.");
+                MessageBox.Show($"Map for island '{island.Name}' uploaded/updated successfully.");
             }
         }
 
@@ -106,7 +95,7 @@ namespace MapManager.App.Views
             if (MessageBox.Show($"Delete island '{island.Name}'?", "Confirm", MessageBoxButton.YesNo) == MessageBoxResult.Yes)
             {
                 _campaign.Islands.Remove(island);
-                _dataService.Save(new System.Collections.Generic.List<Campaign> { _campaign });
+                _dataService.Save(new List<Campaign> { _campaign });
                 IslandList.Items.Refresh();
             }
         }
